@@ -41,7 +41,7 @@ const Home: React.FC = () => {
 
     useEffect(() => {
         if (init) {
-            const audio = new Audio("/stereo-test.mp3");
+            const audio = new Audio(`${process.env.NEXT_PUBLIC_BASE_PATH}stereo-test.mp3`);
             audio.loop = true;
             audio.play();
             setAudio(audio);
