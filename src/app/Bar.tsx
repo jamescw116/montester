@@ -68,14 +68,14 @@ const Bar: React.FC<{
         };
     }, [fnUserMoved, moveTimeOut]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (!hovered && !moved) {
             document.body.style.cursor = "none";
         }
         else {
             document.body.style.cursor = "auto";
         }
-    }, [hovered, moved]);
+    }, [hovered, moved]);*/
 
     return (
         <div className="min-h-10 min-w-10 flex flex-col gap-2 p-2" onMouseOver={() => setHovered(true)} onMouseOut={() => setHovered(false)}>
